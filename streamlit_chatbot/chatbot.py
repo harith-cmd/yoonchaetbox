@@ -44,7 +44,7 @@ with st.sidebar:
     st.select_slider("Option Slider", options=["Very Sad", "Sad", "Okay", "Happy", "Very Happy"], value="Okay")
 
 # Configure Gemini API
-GOOGLE_API_KEY = st.secrets["AIzaSyCsBEw4HNJlaMFZ6488U5QdtWQBK_PN24k"]
+GOOGLE_API_KEY = "AIzaSyCsBEw4HNJlaMFZ6488U5QdtWQBK_PN24k"
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel('gemini-2.5-flash')
 
