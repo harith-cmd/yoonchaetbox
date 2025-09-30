@@ -37,11 +37,6 @@ with st.sidebar:
     character_options = ["Eli Shane", "Trixie", "Kord", "Pronto"]
     st.session_state.favorite_character = st.selectbox("Pick your favorite character", character_options, index=0)
 
-    # Keep your extra controls
-    st.multiselect("Multi-select", ["Movies", "Travel", "Food", "Sports"], default=["Food"])
-    st.selectbox("Dropdown select", ["Data", "Code", "Travel", "Food", "Sports"], index=0)
-    st.slider("Slider", min_value=1, max_value=200, value=60)
-    st.select_slider("Option Slider", options=["Very Sad", "Sad", "Okay", "Happy", "Very Happy"], value="Okay")
 
 # Configure Gemini API
 GOOGLE_API_KEY = st.secrets["asshole"]
